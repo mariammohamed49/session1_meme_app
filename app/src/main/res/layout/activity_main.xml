@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:text="Hello World!"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/first_ana_second_name"
+        android:textColor="@color/red"
+        android:textSize="35sp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+       android:paddingStart="30dp"
+        android:paddingEnd="14dp"
+        android:text="@string/depi"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/image_p1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/image_p2"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="14dp"
+            android:text="@string/my_name"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/title_job"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
